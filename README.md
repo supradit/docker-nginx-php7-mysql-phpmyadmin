@@ -24,9 +24,6 @@ services:
   mariadb:
     image: bencomtech/mariadb:10.2
     environment:
-#      - MARIADB_DATABASE=laravel5
-#      - MARIADB_USER=laravel5_user
-#      - MARIADB_PASSWORD=laravel5_p@ssword
       - MARIADB_ROOT_PASSWORD=p@ssword
     volumes:
       - ./dockers/mariadb:/bitnami/mariadb
